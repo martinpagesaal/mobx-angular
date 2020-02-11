@@ -96,7 +96,6 @@
     "mobx": ">=2"
   },
   "dependencies": {
-    "@angular/cli": "^6.2.9",
-    "rxjs-compat": "^6.0.0-rc.0"
+    "@angular/cli": "^6.2.9"
   }
 }
