@@ -95,5 +95,8 @@
   "peerDependencies": {
     "mobx": ">=2",
     "@angular/core": ">=2.3.0"
+  },
+  "dependencies": {
+    "@angular/cli": "^6.2.9"
   }
 }
