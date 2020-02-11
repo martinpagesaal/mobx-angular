@@ -1,8 +1,7 @@
 export default {
-  format: 'umd',
-  moduleName: 'mobx-angular',
-  external: [
-    '@angular/core',
-    'mobx'
-  ]
+  output: {
+    format: 'umd',
+    name: 'mobx-angular'
+  },
+  external: ['@angular/core', 'mobx']
 };

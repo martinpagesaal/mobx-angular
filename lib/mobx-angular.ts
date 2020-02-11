@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 import { MobxAutorunDirective } from './directives/mobx-autorun.directive';
 import { MobxAutorunSyncDirective } from './directives/mobx-autorun-sync.directive';
 import { MobxReactionDirective } from './directives/mobx-reaction.directive';
@@ -10,25 +9,28 @@ import {
 } from 'mobx';
 import { computed as mobxComputed } from 'mobx';
 import { observable as mobxObservable } from 'mobx';
+import { NgModule } from '@angular/core';
+
+@NgModule({
+  declarations: [
+    MobxAutorunDirective,
+    MobxAutorunSyncDirective,
+    MobxReactionDirective
+  ],
+  imports: [],
+  exports: [
+    MobxAutorunDirective,
+    MobxAutorunSyncDirective,
+    MobxReactionDirective
+  ]
+})
+export class MobxAngularModule {}
 
 export {
   MobxAutorunDirective,
   MobxAutorunSyncDirective,
   MobxReactionDirective
 };
-
-const DIRECTIVES = [
-  MobxAutorunDirective,
-  MobxAutorunSyncDirective,
-  MobxReactionDirective
-];
-@NgModule({
-  declarations: DIRECTIVES,
-  exports: DIRECTIVES,
-  imports: [],
-  providers: []
-})
-export class MobxAngularModule {}
 
 export function actionInternal(...args) {
   return (mobxAction as any)(...args);
