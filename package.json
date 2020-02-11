@@ -67,12 +67,13 @@
   },
   "homepage": "https://github.com/mobxjs/mobx-angular#readme",
   "devDependencies": {
-    "@angular/common": "^6.1.10",
-    "@angular/compiler": "^6.1.10",
+    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular/common": "^7.2.16",
+    "@angular/compiler": "^7.2.16",
     "@angular/compiler-cli": "^7.2.16",
-    "@angular/core": "^6.1.10",
-    "@angular/platform-browser": "^6.1.10",
-    "@angular/platform-browser-dynamic": "^6.1.10",
+    "@angular/core": "^7.2.16",
+    "@angular/platform-browser": "^7.2.16",
+    "@angular/platform-browser-dynamic": "^7.2.16",
     "@types/core-js": "0.9.43",
     "@types/jest": "^24.0.23",
     "codelyzer": "^5.2.1",
@@ -96,6 +97,7 @@
     "mobx": ">=2"
   },
   "dependencies": {
-    "@angular/cli": "^6.2.9"
+    "@angular/cli": "^7.3.9",
+    "tslib": "^1.9.0"
   }
 }
