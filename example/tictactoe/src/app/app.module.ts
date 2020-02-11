@@ -11,6 +11,7 @@ import { CellComponent } from './components/cell/cell.component';
 import { ControlsComponent } from './components/controls/controls.component';
 import { GameComponent } from './components/game/game.component';
 import { ScoreComponent } from './components/score/score.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,8 @@ import { ScoreComponent } from './components/score/score.component';
     GameComponent,
     ScoreComponent
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    MobxAngularModule
-  ],
+  imports: [BrowserModule, FormsModule, HttpClientModule, MobxAngularModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
