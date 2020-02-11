@@ -83,6 +83,7 @@
     "jest-preset-angular": "^8.0.0",
     "lint-staged": "^10.0.7",
     "mobx": "4.0.1",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "relative-deps": "^0.2.0",
     "rimraf": "2.5.4",
